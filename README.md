@@ -1,7 +1,7 @@
 Import Canvas Component to any file at the top of the element, over which you want to draw something.
 
 
-Import {Canvas} from 'sariska-annotation-sdk';
+```Import {Canvas} from 'sariska-annotation-sdk';
 
 const MyComponent=() => {
 
@@ -19,7 +19,7 @@ const MyComponent=() => {
     
   )
   
-}
+}```
 
 
 You can replace the div element with any Image, Iframe, Slide or any other element.
