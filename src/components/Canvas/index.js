@@ -1,7 +1,7 @@
 import React from 'react'
 import { useOnDraw } from '../../hooks/useOnDraw'
 
-const Canvas = ({width, height, color, lineWidth}) => {
+const Canvas = ({width, height, color, lineWidth, zIndex}) => {
     const {setCanvasRef, onMouseDown} = useOnDraw(onDraw);
 
     function onDraw (data) {
@@ -19,12 +19,12 @@ const Canvas = ({width, height, color, lineWidth}) => {
 
       ctx.fillStyle = color;
       ctx.beginPath();
-      ctx.arc(start.x, start.y, 1, 0, 2 * Math.PI);
+      ctx.arc(start.x, start.y, lineWidth/2, 0, 2 * Math.PI);
       ctx.fill()
     }
 
   return (
-    <div style={{position: 'absolute', zIndex: 10}}>
+    <div style={{position: 'absolute', zIndex: zIndex ?? 10}}>
         <div></div>
         <canvas 
             width={width}
