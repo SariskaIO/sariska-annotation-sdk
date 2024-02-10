@@ -1,0 +1,45 @@
+{
+  "name": "sariska-annotation-sdk",
+  "version": "1.0.4",
+  "description": "sariska annotation sdk",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SariskaIO/sariska-annotation-sdk"
+  },
+  "keywords": [
+    "react",
+    "annotation",
+    "sdk"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "prepublish": "rm -rf ./lib && npm run build"
+  },
+  "author": "Gurudeep",
+  "bugs": {
+    "url": "https://github.com/SariskaIO/sariska-annotation-sdk"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "@svgr/webpack": "^8.1.0",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.10.0",
+    "file-loader": "^6.2.0",
+    "path": "^0.12.7",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
